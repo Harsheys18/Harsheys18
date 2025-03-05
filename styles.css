@@ -1,14 +1,15 @@
 /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -31,10 +32,13 @@ nav ul li a {
 }
 
 .hero {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
-    padding: 100px 20px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
 }
 
 .hero h1 {
@@ -48,7 +52,8 @@ nav ul li a {
 
 .content {
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    color: #333;
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -59,7 +64,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     color: #fff;
     text-align: center;
     padding: 10px 0;
